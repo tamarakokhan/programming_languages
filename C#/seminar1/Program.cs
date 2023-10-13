@@ -124,9 +124,34 @@ void Ex6()
 
     Console.WriteLine("Введите число: ");
     int x = Convert.ToInt32(Console.ReadLine());
-
-    for (int i = -x; i <= x; i++)
+    if (x > 0)
     {
-        Console.Write(i + " ");
+        for (int i = -x; i <= x; i++)
+        {
+            Console.Write(i + " ");
+        }
+    }
+    else
+    {
+        for (int i = x; i <= -x; i++)
+        {
+            Console.Write(i + " ");
+        }
     }
 }
+
+void Ex7()
+{
+    // Напишите программу, которая принимает на вход трехзначное число
+    // и на выходе показывает последнюю цифру этого числа.
+
+    Random rnd = new Random();
+    int num = rnd.Next(100, 1000);
+    Console.WriteLine($"Число - {num}.");
+
+    int n = num % 10;
+    Console.WriteLine($"Последняя цифра - {n}.");
+}
+
+Console.Clear();
+//Ex7();
