@@ -70,3 +70,5 @@ void Ex15()
         Console.WriteLine($"Нет, {days[num]} -  не выходной день.");
     }
 }
+
+Console.Clear();
