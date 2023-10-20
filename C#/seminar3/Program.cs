@@ -41,6 +41,36 @@ void Ex18()
     else if (n == 3) Console.WriteLine($"В {n} четверти x < 0, y < 0.");
     else if (n == 4) Console.WriteLine($"В {n} четверти x > 0, y < 0.");
     else Console.WriteLine("Нет такой четверти.");
+
+
+    switch (n)
+    {
+        case 1:
+        {
+            Console.WriteLine($"В {n} четверти x > 0, y > 0.");  
+            break;      
+        }
+        case 2:
+        {
+            Console.WriteLine($"Во {n} четверти x < 0, y > 0.");  
+            break;      
+        }
+        case 3:
+        {
+            Console.WriteLine($"В {n} четверти x < 0, y < 0.");  
+            break;      
+        }
+        case 4:
+        {
+            Console.WriteLine($"В {n} четверти x > 0, y < 0.");  
+            break;      
+        }
+        default:
+        {
+            Console.WriteLine("Нет такой четверти.");
+            break;
+        }
+    }
 }
 
 void Ex21()
@@ -74,4 +104,4 @@ void Ex22()
 }
 
 Console.Clear();
-Ex22();
+Ex18();
